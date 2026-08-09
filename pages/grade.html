@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Grade</title>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Calculate Grade</h2>
+
+    Enter Mark:
+    <input type="number" id="mark">
+
+    <button onclick="calculateGrade()">Submit</button>
+    <button onclick="history.back()">Back</button>
+
+    <p id="result"></p>
+
+</div>
+
+<script>
+
+function calculateGrade(){
+
+    let mark = document.getElementById("mark").value;
+
+    // Validation
+    if(mark == ""){
+        alert("Please enter a mark.");
+        return;
+    }
+
+    if(mark < 0 || mark > 100){
+        document.getElementById("result").innerHTML = "ERROR";
+        return;
+    }
+
+    let grade;
+
+    if(mark >= 90){
+        grade = "A";
+    }
+    else if(mark >= 80){
+        grade = "B";
+    }
+    else if(mark >= 70){
+        grade = "C";
+    }
+    else if(mark >= 50){
+        grade = "D";
+    }
+    else{
+        grade = "F";
+    }
+
+    let article = (grade == "A" || grade == "F") ? "an" : "a";
+
+    document.getElementById("result").innerHTML =
+    "You got " + article + " " + grade;
+
+}
+
+</script>
+
+</body>
+</html>
