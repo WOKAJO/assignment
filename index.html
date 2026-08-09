@@ -3,9 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abdulaziz Jehyahjehteh (Zizo) - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+
+    <div class="resume-container">
+        
+        <!-- Header / Hero Section -->
+        <header class="profile-header">
+            <div class="avatar-circle">
+                <span>ZIZO</span>
+            </div>
+            <h1 class="name">ABDULAZIZ JEHYAHJEHTEH</h1>
+            <p class="tagline"><span id="typing-text"></span><span class="cursor">|</span></p>
+            <div class="badge-status">
+                <i class="fa-solid fa-graduation-cap"></i> Year 2 Student
+            </div>
+        </header>
+
+        <!-- Main Content Layout -->
+        <main class="resume-body">
+            
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                
+                <!-- Contact Card -->
+                <section class="card">
+                    <h2><i class="fa-solid fa-address-card"></i> Contact</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:fatane40@gmail.com">fatane40@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Education Card -->
+                <section class="card">
+                    <h2><i class="fa-solid fa-user-graduate"></i> Education</h2>
+                    <div class="education-item">
+                        <h3>Bachelor of Information Technology</h3>
+                        <span class="edu-year"><i class="fa-solid fa-calendar-days"></i> Year 2 Student</span>
+                    </div>
+                </section>
+
+                <!-- Languages Card -->
+                <section class="card">
+                    <h2><i class="fa-solid fa-language"></i> Languages</h2>
+                    <div class="lang-grid">
+                        <div class="lang-badge">
+                            <i class="fa-solid fa-check-circle"></i> Arabic
+                        </div>
+                        <div class="lang-badge">
+                            <i class="fa-solid fa-check-circle"></i> English
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hobbies Link -->
+                <section class="card hobby-card">
+                    <h2><i class="fa-solid fa-gamepad"></i> Interests</h2>
+                    <a href="hobby.html" class="btn-hobby">
+                        <span>Explore My Hobbies</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </section>
+
+            </aside>
+
+            <!-- Right Column -->
+            <section class="main-content">
+                
+                <!-- About Me -->
+                <div class="card">
+                    <h2><i class="fa-solid fa-user"></i> About Me</h2>
+                    <p class="about-text">
+                        Hello! My name is <strong>ZIZO</strong>. I am an Information Technology student who is passionate about building innovative digital solutions. I enjoy exploring <strong>programming</strong>, <strong>mobile application development</strong>, <strong>cybersecurity</strong>, and <strong>web development</strong>.
+                    </p>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="card">
+                    <h2><i class="fa-solid fa-code"></i> Skills & Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-html5"></i> HTML</span>
+                                <span class="level">Beginner</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-laptop-code"></i> Computer Skills</span>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-users"></i> Teamwork</span>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-palette"></i> Graphic Design</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-wand-magic-sparkles"></i> Decoration & UI</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Designed with ❤️ for ZIZO | Information Technology Resume</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,154 @@
+/* إعادة ضبط واختيار الخط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* الشريط العلوي Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.navbar input {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: #fff;
+    outline: none;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.navbar input:focus {
+    border-color: #38bdf8;
+}
+
+/* مقدمة الصفحة */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+/* شبكة المشاريع */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 5%;
+    flex: 1;
+}
+
+/* كرت المشروع */
+.project-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
+    border-color: #38bdf8;
+}
+
+.card-badge {
+    align-self: flex-start;
+    background-color: #0369a1;
+    color: #e0f2fe;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #f1f5f9;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+
+/* وسوم التقنيات */
+.tech-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tags span {
+    background-color: #334155;
+    color: #cbd5e1;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+/* زر المعاينة */
+.btn {
+    text-decoration: none;
+    text-align: center;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    padding: 0.7rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #7dd3fc;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e293b;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #334155;
+}
