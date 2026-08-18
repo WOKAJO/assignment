@@ -1,0 +1,9 @@
+{
+    "name": "ZIZO Resume",
+    "short_name": "ZIZO Resume",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "description": "My personal resume web application"
+}
