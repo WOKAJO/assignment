@@ -3,6 +3,10 @@
 <head>
     <title>My Resume</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
 </head>
 
 <body>
@@ -16,7 +20,7 @@
 
     <p>
         Hello! My name is ZIZO I am an Information Technology student.
-         and I enjoy learning programming, mobile application development,
+        and I enjoy learning programming, mobile application development,
         cybersecurity, and web development.
     </p>
 
@@ -63,9 +67,9 @@
     </table>
 
     <hr>
+
     <h2>Hobbies</h2>
     <a href="hobby.html">My Hobbies</a>
-
 
     <hr>
 
@@ -80,36 +84,50 @@
         </a>
     </p>
 
-     <table border="1">
+    <table border="1">
 
         <tr>
-            <td><a href="pages/Change.html">Change</a></td>
+            <td>
+                <a href="pages/Change.html">Change</a>
+            </td>
         </tr>
-    
-    <tr> 
-        <td>
-        <a href="pages/Distance.html">Distance</a>
-     </td>
-    </tr>
-    <tr>
-        <td>
-        <a href="pages/grade.html">grade</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <a href="pages/hobby.html">My Hobbies</a>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-        <a href="pages/Temperature Converter.html">Temperature Converter.html</a>
-        </td>
-    </tr>
+
+        <tr>
+            <td>
+                <a href="pages/Distance.html">Distance</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="pages/grade.html">grade</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="pages/hobby.html">My Hobbies</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="pages/Temperature Converter.html">
+                    Temperature Converter.html
+                </a>
+            </td>
+        </tr>
+
     </table>
-    
+
+    <!-- PWA Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
 
 </body>
 </html>
-
