@@ -1,9 +1,11 @@
 {
     "name": "ZIZO Resume",
-    "short_name": "ZIZO Resume",
+    "short_name": "ZIZO CV",
+    "description": "Personal resume and web application of ZIZO",
     "start_url": "index.html",
+    "scope": "./",
     "display": "standalone",
-    "background_color": "#ffffff",
+    "background_color": "#eeeeee",
     "theme_color": "#000000",
-    "description": "My personal resume web application"
+    "orientation": "portrait"
 }
